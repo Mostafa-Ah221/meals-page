@@ -162,7 +162,7 @@ async function searchByFirstLetter(letter) {
 async function displayMealDetails(mealID) {
     rowData.innerHTML = "";
     loading.style.display = "block";
-    searchContainer.innerHTML = "";
+    // searchContainer.innerHTML = "";
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`);
         const data = await response.json();
             showMealDetails(data.meals[0]);
@@ -173,7 +173,7 @@ async function displayMealDetails(mealID) {
 async function getingredients(ingredients) {
     loading.style.display = "block";
     rowData.innerHTML = "";
-    searchContainer.innerHTML = "";
+    // searchContainer.innerHTML = "";
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredients}`);
     let data = await response.json();
@@ -186,7 +186,7 @@ async function getingredients(ingredients) {
 async function getArea(area) {
     rowData.innerHTML = "";
     loading.style.display = "block";
-    searchContainer.innerHTML = "";
+    // searchContainer.innerHTML = "";
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`);
     let data = await response.json();

@@ -208,7 +208,7 @@ async function getArea(area) {
 //  ==============================================Function to display meal details==========
 
 function showMealDetails(meal) {
-    // searchContainer.innerHTML = "";
+   
     console.log(meal);
     let ingredients = ``;
 
